@@ -21,15 +21,23 @@ while True:
             continue
 
         if operation == '1':
+            import time
+            time.sleep (1)
             print("The sum of " , integer1, "and ", integer2, "is ", addition(integer1, integer2))
 
         elif operation == '2':
+            import time
+            time.sleep (1)
             print("The difference of " , integer1, "and ", integer2, "is ", subtraction(integer1, integer2))
 
         elif operation == '3':
+            import time
+            time.sleep (1)
             print("The product of " , integer1, "and ", integer2, "is ", multiplication(integer1, integer2))
 
         elif operation == '4':
+            import time
+            time.sleep (1)
             print("The quotient of " , integer1, "and ", integer2, "is ", division(integer1, integer2))
 
 
