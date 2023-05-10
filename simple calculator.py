@@ -19,6 +19,18 @@ while true:
         except ValueError:
             print ("There seems to be an error. Are you sure you entered an integer?")
             continue
-        
+
+        if operation == '1':
+            print("The sum of " integer1, "and ", integer2, "is ", addition)
+
+        elif operation == '2':
+            print("The difference of " integer1, "and ", integer2, "is ", subtraction)
+
+        elif operation == '3':
+            print("The product of " integer1, "and ", integer2, "is ", multiplication)
+
+        elif operation == '4':
+            print("The quotient of " integer1, "and ", integer2, "is ", division)
+
 
 #ask user if they want to try again
