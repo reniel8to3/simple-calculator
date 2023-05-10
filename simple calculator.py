@@ -44,12 +44,12 @@ def main():
                 print ("There seems to be an error. Are you sure you entered an integer?")
                 continue
     #ask user if they want to try again
-                try_again = input("Do you want to try again? Type y if yes and n if no.")
-                if try_again == 'y':
-                    main()
-                elif try_again =='n':
-                    print ('Thank you for using this program.')
-                    break
-                else: 
-                    print ('Invalid input.')
+            try_again = input("Do you want to try again? Type y if yes and n if no.")
+            if try_again == 'y':
+                main()
+            elif try_again =='n':
+                print ('Thank you for using this program.')
+                break
+            else: 
+                print ('Invalid input.')
 main()
