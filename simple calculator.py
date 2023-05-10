@@ -1,11 +1,11 @@
 #define operators
-def addition:
+def addition(integer1, integer2):
     return integer1 + integer2
-def subtraction:
+def subtraction(integer1, integer2):
     return integer1 - integer2
-def multiplication:
+def multiplication(integer1, integer2):
     return integer1 * integer2
-def division:
+def division(integer1, integer2):
     return integer1 / integer2
 #def simple calculator main function and print prompt
 print ("This program is designed to function as a simple calculator. This program can perform Addition, Subtraction, Multiplication, and Division.")
