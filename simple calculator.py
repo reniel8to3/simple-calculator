@@ -17,32 +17,31 @@ def main():
             try:
                 integer1 = int(input('Input the first integer: '))
                 integer2 = int(input('Input the second integer: '))
+                if operation == '1':
+                    import time
+                    time.sleep (1)
+                    print("The sum of " , integer1, "and ", integer2, "is ", addition(integer1, integer2))
+                elif operation == '2':
+                    import time
+                    time.sleep (1)
+                    print("The difference of " , integer1, "and ", integer2, "is ", subtraction(integer1, integer2))
+
+                elif operation == '3':
+                    import time
+                    time.sleep (1)
+                    print("The product of " , integer1, "and ", integer2, "is ", multiplication(integer1, integer2))
+
+                elif operation == '4':
+                    import time
+                    time.sleep (1)
+                    print("The quotient of " , integer1, "and ", integer2, "is ", division(integer1, integer2))
+                else:
+                    print ("There seems to be an error. Are you sure you entered an integer?")
+                    continue
+            except ZeroDivisionError:
+                print("You can't divide by zero. Please try again")
             except ValueError:
-                print ("There seems to be an error. Are you sure you entered an integer?")
-                continue
-
-            if operation == '1':
-                import time
-                time.sleep (1)
-                print("The sum of " , integer1, "and ", integer2, "is ", addition(integer1, integer2))
-
-            elif operation == '2':
-                import time
-                time.sleep (1)
-                print("The difference of " , integer1, "and ", integer2, "is ", subtraction(integer1, integer2))
-
-            elif operation == '3':
-                import time
-                time.sleep (1)
-                print("The product of " , integer1, "and ", integer2, "is ", multiplication(integer1, integer2))
-
-            elif operation == '4':
-                import time
-                time.sleep (1)
-                print("The quotient of " , integer1, "and ", integer2, "is ", division(integer1, integer2))
-            else:
-                print ("There seems to be an error. Are you sure you entered an integer?")
-                continue
+                print("There seems to be an error. Are you sure you entered an integer?")
     #ask user if they want to try again
             try_again = input("Do you want to try again? Type y if yes and n if no.")
             if try_again == 'y':
